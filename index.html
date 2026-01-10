@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENA ANIRAJ | استهلاك ذكي</title>
+
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '726542516861248');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=726542516861248&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        :root {
+            --bg-color: #0F3D3E;
+            /* Dark Emerald */
+            --accent-color: #C9A24D;
+            /* Soft Gold */
+            --text-color: #F7F6F2;
+            /* Ivory White */
+            --secondary-bg: #144445;
+            /* Slightly lighter emerald for cards */
+            --whatsapp-green: #25D366;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            text-align: center;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 480px;
+            /* Mobile focused max-width */
+            margin: 0 auto;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            background: radial-gradient(circle at top, #1a5c5d 0%, var(--bg-color) 60%);
+            flex: 1;
+        }
+
+        /* Header / Logo Area */
+        header {
+            margin-bottom: 30px;
+            animation: fadeInDown 1s ease;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 32px;
+            font-weight: 900;
+            margin: 0;
+            line-height: 1.2;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #e0e0e0;
+            margin-top: 5px;
+            font-weight: 400;
+        }
+
+        /* Product Showcase */
+        .showcase {
+            margin: 20px 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border: 2px solid var(--accent-color);
+            animation: zoomIn 0.8s ease;
+        }
+
+        .showcase img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Check list Box */
+        .box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border: 1px solid rgba(201, 162, 77, 0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        .box p {
+            margin: 10px 0;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .check-icon {
+            color: var(--whatsapp-green);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* Persuasive Text */
+        .persuasion {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* CTA Button */
+        .cta-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: #fff;
+            padding: 18px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+            position: relative;
+            overflow: hidden;
+            animation: pulse-green 2s infinite;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        .btn svg {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            fill: white;
+        }
+
+        .note {
+            font-size: 13px;
+            color: #aaa;
+            margin-top: 15px;
+        }
+
+        /* Animations */
+        @keyframes pulse-green {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+                transform: scale(1);
+            }
+
+            50% {
+                box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+                transform: scale(1.02);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Mobile specific adjustments */
+        @media (max-width: 380px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .btn {
+                font-size: 18px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <!-- Using text for better clarity and consistent styling -->
+            <h1>ENA ANIRAJ</h1>
+            <h2>استهلاك ذكي، حياة أفضل</h2>
+        </header>
+
+        <section class="persuasion">
+            <p>
+                كتصرفي فلوسك كل شهر على منتجات عادية؟<br>
+                <strong>دابا وقت التغيير!</strong>
+            </p>
+        </section>
+
+        <!-- Product Image 1 -->
+        <div class="showcase">
+            <img src="assets/products-1.jpg" alt="منتجات ENA ANIRAJ" loading="lazy">
+        </div>
+
+        <div class="box">
+            <p><span class="check-icon">✔</span> جودة عالمية مضمونة</p>
+            <p><span class="check-icon">✔</span> أثمنة جد مناسبة</p>
+            <p><span class="check-icon">✔</span> استهلاك ذكي ومربح</p>
+            <p><span class="check-icon">✔</span> بدون التزام أو مخاطرة</p>
+        </div>
+
+        <section class="persuasion" style="font-size: 16px; opacity: 0.9;">
+            <p>
+                المجموعة واتساب مخصصة باش نشرحو ليك كل التفاصيل.<br>
+                <strong>اضغطي على الزر لتحت باش تدخلي عندنا 👇</strong>
+            </p>
+        </section>
+
+        <div class="cta-container">
+            <!-- Added Pixel Event Tracking -->
+            <a class="btn" href="https://chat.whatsapp.com/EYhH1Gkn9qv3hi7kcGK7y6" onclick="fbq('track', 'Lead');">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-123-67.1-167zM223.9 438.6c-33.6 0-66.5-9-94.7-25.8l-6.8-4-78.4 20.6 20.9-76.4-4.5-7.1c-19-30.1-29-65.2-29-102.5 0-106 86.2-192.3 192.6-192.3 51.4 0 99.7 20 136 56.5s56.1 84.6 56.1 136c0 106.1-86.3 192.5-192.3 192.5zM358 290c-6.8-3.4-39.6-19.5-45.7-21.7-6.2-2.2-10.7-3.3-15.2 3.4-4.5 6.7-17.7 22.3-21.7 26.8-4 4.5-8 5.1-14.8 1.7-6.8-3.4-28.8-10.6-54.9-33.8-20.1-17.9-33.7-40-37.6-46.7-3.9-6.7-.4-10.3 3-13.7 3.1-3.1 6.8-8 10.2-12 3.4-4 4.5-6.8 6.8-11.3 2.3-4.5 1.1-8.5-.6-11.9-1.7-3.4-15.2-36.6-20.9-50.1-5.5-13.2-11.1-11.4-15.2-11.6-3.9-.2-8.3-.2-12.7-.2-4.4 0-11.5 1.7-17.6 8.3-6.1 6.6-23.4 22.9-23.4 55.7 0 32.8 23.9 64.5 27.2 68.9 3.3 4.4 47.1 72 114.2 100.9 45.4 19.6 54.6 15.7 64.5 14.7 15.6-1.5 39.6-16.2 45.2-31.8 5.6-15.7 5.6-29.2 3.9-31.8-1.7-2.6-6.1-4.1-12.9-7.5z" />
+                </svg>
+                اضغط هنا للدخول للمجموعة
+            </a>
+            <div class="note">* دخولك مجاني وبدون أي التزام</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
